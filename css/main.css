@@ -1,0 +1,172 @@
+body{
+    /*margen predeterminado*/
+    margin: 0;
+    padding:0;  /* margen pa' dentro */
+    font-size: 13px; /*tamao de texto */
+    font-family: Arial, Helvetica, sans-serif; /* Fuente del texto */
+}
+/***************************************************
+*******************
+****************************navegacion 
+********************/
+header{
+    background-color: beige;
+    width: 100%;
+    height: 55px;
+}
+header nav{
+    display: flex;/*Como se puede mover el elemento , a ser flexible */
+    justify-content: flex-end; /* mover , e este caso a la derecha*/
+}
+header nav .nav-right-section{
+
+    list-style: none; /*Es para eliminar viñetas */
+    width: 250px; /*widht anchho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* altura */
+
+} 
+
+nav .nav-right-section a{
+    color: rgb(21,21, 21); /*Color de texto */
+    text-decoration: none; /* linea debajo de texto*/
+    margin-right: 25px; /* margen dereho . el espacon entre mai,im,menuetc*/
+    
+}
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+nav .nav-right-section img{
+    margin-left: 20px;
+    border-radius: 100px;
+}
+/* +++++++++main+++++++++  */
+main{
+    text-align: center;
+    margin-top: 160px;
+}
+main .main-logo{
+    width: 530px;
+    margin:0 auto;
+    background-color: ;
+    margin-bottom: 40px; 
+}
+/*logo gogle */
+main .main-logo img{
+    height:140px ;
+}
+/* seccion input */
+main .main-input{
+    
+    width: 530px; /*Anchura */
+    margin: 0 auto; /* imagen y centrado */
+    margin-bottom: 40px; /* Separar inpt de botones */
+    
+
+}
+/*cajita gris redondeada */
+main .main-input-contanier{
+    border:1px solid  #dfele5; /* ancho de linea , estilo y color */
+    border-radius:30px;
+    width: 525px;
+}
+main .main-input input{
+    width: 430px;
+    height: 40px;
+    border: none;
+    outline: none; /*quitar borde azul al hacer click*/
+}
+main .main-input  .search-icon{
+    /* poner una imagen de la lupita */
+  background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  background-size: contain;
+  padding-left: 6%;
+  background-repeat: no-repeat;
+}   
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 45px;
+    height: 45px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 2%;
+    background-repeat: no-repeat;
+}
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 17px;
+    height: 17px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 6%;
+}
+main .main-buttons{
+    
+    width: 350px;
+    /*Horizontal / Vertical*/
+    
+    margin: 0% auto;
+    }
+main  .main-buttons div{
+    display: inline-block;  /*Alinear elementos en la mismalinea */
+
+}
+main .main-buttons button{
+    border: 0;
+    height: 39px;
+    background-color: #f8f9fa;
+    font-size: 14px ;
+    color: #3c4043;
+    border-radius: 4px;
+    margin-right: 15px;
+    padding: 0 15px;
+
+}
+
+main .main-input-contanier:hover{
+    box-shadow: 0 0 5px #20212447;
+}
+main .main-buttons button:hover{
+    color: #202124;
+    border:1px solid #dadce0 ;
+    box-shadow: 0 0 3px #d6d6d6;
+}
+
+footer{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+footer ul{
+    margin: 19px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+footer .sobre-neg{
+    justify-self: left;
+
+}
+footer .pri-co{
+    justify-self: right;
+}
+footer ul li a{
+    margin: 33px;
+    color: #5f6368;
+}
